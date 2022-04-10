@@ -1,3 +1,188 @@
-*{
-    padding: 0px;
+body {
+  background-color: aquamarine;
+}
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #313131;
+}
+
+.header a.active {
+  color: blue;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #313131;
+}
+
+.headerRight {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+.box {
+  /* background-color: brown; */
+  height: 100vh;
+  width: 100%;
+  background: url("../images/banner3.png");
+  background-repeat: no-repeat;
+  /* width: 1080px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bannerContent {
+  color: red;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  /* color: #313131; */
+  width: 50%;
+}
+
+.buttonLearn {
+  float: left;
+  width: 50%;
+}
+.button {
+  position: absolute;
+  width: 181px;
+  height: 60px;
+  background: #0c74bc;
+  box-shadow: 0px 8px 15px rgba(12, 116, 188, 0.24);
+  border-radius: 100px;
+  color: white;
+}
+
+.aboutText {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  padding-top: 60px;
+}
+.aboutSection {
+  background-color: white;
+  height: 105vh;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardItem {
+  /* background-color: red;
+  width: 300px;
+  height: 400px; */
+  margin: 20px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  position: relative;
+  width: 460px;
+  height: 609px;
+}
+.item1 {
+  background: hsla(0, 100%, 94%, 1);
+  height: 380px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 40px;
+}
+
+.cardText {
+  padding-left: 20px;
+}
+
+.tech {
+  width: 281px;
+  height: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #313131;
+}
+
+.techPara {
+  width: 440px;
+  height: 52px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+}
+
+.item2{
+    /* background: hsla(0, 100%, 94%, 1); */
+    height: 380px;
+    border-radius: 15px 15px 0px 0px;
+}
+.imageCenter{
+    display: block;
+  width: 100%;
+  height: 200px;
+  width: 300px;
+}
+
+.capabilities{
+    background: hsla(0, 15%, 96%, 1);
+    height: 205vh;
 }
